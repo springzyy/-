@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: #000000;
     font-family: 'Segoe UI', system-ui, sans-serif;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
