@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #c9a96e;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.woodfish {
+    font-size: 140px;
+    cursor: pointer;
+    transition: transform 0.08s ease;
+    display: inline-block;
+    filter: drop-shadow(0 10px 20px rgba(201, 169, 110, 0.3));
+}
+
+.woodfish:active {
+    transform: scale(0.92);
+}
+
+.counter {
+    color: #c9a96e;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    letter-spacing: 0.1em;
+}
+
+/* 飘字容器 */
+.floating-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    width: 200px;
+    height: 200px;
+}
+
+.float-text {
+    position: absolute;
+    color: #f0c060;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 1;
+    animation: floatUp 0.8s ease-out forwards;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(240, 192, 96, 0.6);
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-80px) scale(1.3);
+    }
+}
