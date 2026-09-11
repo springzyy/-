@@ -29,11 +29,19 @@ h1 {
 }
 
 .woodfish {
-    font-size: 140px;
     cursor: pointer;
     transition: transform 0.08s ease;
     display: inline-block;
     filter: drop-shadow(0 10px 20px rgba(201, 169, 110, 0.3));
+}
+
+.woodfish img {
+    width: 200px;          /* 按需调整 */
+    height: auto;
+    display: block;
+    pointer-events: none;  /* 让点击事件落在父级 div 上 */
+    user-select: none;
+    -webkit-user-drag: none;  /* 防止拖拽图片 */
 }
 
 .woodfish:active {
